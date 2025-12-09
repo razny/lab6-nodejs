@@ -3,6 +3,8 @@ on: push
 jobs:   
   build:
     runs-on: ubuntu-latest
+    env:
+        IMAGE: ghcr.io/raznyj/python-app
     steps:
     - uses: actions/checkout@v4
 
